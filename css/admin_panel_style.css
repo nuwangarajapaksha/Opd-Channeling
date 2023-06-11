@@ -1,0 +1,166 @@
+/* 
+    Created on : Sep 19, 2021, 1:37:56 PM
+    Author     : NUWAA
+*/
+
+
+/*-------dashboard------------------------------------------------------------------------------------*/
+
+.dashboard-container{
+    height: 700px;
+    top:70px;
+    position: fixed;
+    background-color: #00cccc;
+    box-shadow: 0px 0px 5px #000000;
+    z-index: 1;
+}
+
+.dashboard-container ul li{
+    width: 220px;
+    display: block;
+    margin: 0px;
+    padding: 10px 20px;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.dashboard-container ul li:hover{
+    color: white;
+    background-color: #009999;
+}
+
+.dashboard-container ul li.active-child{
+    color:white;
+    background-color: #009999;
+}
+
+
+/*-------child------------------------------------------------------------------------------------*/
+
+.child-container{
+    width: 85%;
+    height: 100%;
+    top: 80px;
+    left: 230px;
+    padding: 30px 30px;
+    display: block;
+    /*    background-color: white;*/
+}
+
+.child-container-disable{
+    display: none;
+}
+
+.child-container button{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #00cccc;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px #000000;
+    cursor: pointer;
+}
+
+.child-container button:hover{
+    color: white;
+    background-color: #009999;
+}
+
+.child-container form {
+    right: 32px;
+    float: right;
+}
+
+.child-container form input{
+    width: 200px;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #00cccc;
+    outline: none;
+}
+
+.child-container form input:hover{
+    border-bottom: 1px solid #009999;
+}
+
+.child-container table{
+    width: 100%;
+    top: 10px;
+    border-collapse: collapse;
+}
+
+.child-container table tr{
+    border-bottom: 1px solid white;
+}
+
+.child-container table tr th{
+    color: white;
+    text-align: left;
+    padding: 10px;
+    background-color: #00cccc;
+}
+
+.child-content td {
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    background-color: #adffff;  
+}
+
+.child-content:hover{
+    color: #666666;
+}
+
+.child-content td img{
+    width: 40px;
+    height: 40px;
+}
+
+.child-content .remove{
+    width: 10px;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    background-color: white;
+}
+
+.child-content .remove:hover{
+    color: #009999;
+}
+
+.shader{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    z-index: 899;
+    display: none;
+}
+
+.shader.active-shader{
+    display: block;
+    animation-name: shader-active;
+    animation-duration: 0.6s;
+}
+
+@keyframes shader-active{
+    from {opacity: 0;}
+    to {opacity: 0.3;}
+}
+
+.child-content a{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}  
+
+.child-content a:hover{
+    color: #009999;
+}

@@ -1,0 +1,53 @@
+/* 
+    Created on : Sep 15, 2021, 1:40:13 AM
+    Author     : NUWAA
+*/
+
+.index-container{
+    top: -300px;
+    margin: 10px 0;
+    color: #666666;
+    text-align: center;
+    position: relative;
+}
+
+.index-container p{
+    width: 500px;
+    font-size: 12px;
+}
+
+.shader{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    z-index: 899;
+    display: none;
+}
+
+.shader.active-shader{
+    display: block;
+    animation-name: shader-active;
+    animation-duration: 0.6s;
+}
+
+@keyframes shader-active{
+    from {opacity: 0;}
+    to {opacity: 0.3;}
+}
+
+.text-container{
+    width: 50%;
+    height: 100%;
+    top: 80px;
+    padding: 30px;
+    margin-bottom: 50px;
+    color: #666666;
+    text-align: center;
+}
+
+.text-container p{
+    top: 5px;
+    font-size: 12px;
+}

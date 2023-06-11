@@ -1,0 +1,115 @@
+/* 
+    Created on : Sep 22, 2021, 10:20:13 PM
+    Author     : NUWAA
+*/
+
+.login-container{
+    width: 30%;
+    height: 300px;
+    top: 120px;
+    left: 35.5%;
+    position: fixed;
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #000000;
+    z-index: 999;
+}
+
+.login-container p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-container img{
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.login-container form{
+    top: 10px;
+}
+
+.login-container form p{
+    top:  10px;
+    margin: 5px 0;
+    color: #333333;
+    font-size: 15px;
+}
+
+.login-container form input{
+    width: 100%;
+    margin: 8px 0;
+    padding: 5px 0px;
+    color: #333333;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px solid #00cccc;
+    outline: none;
+}
+
+.login-container form input:hover{
+    border-bottom: 1px solid #009999;
+}
+
+
+.login-container form button{
+    top: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #00cccc;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #000000;
+    outline: none;
+    float: left;
+}
+
+.login-container form button:hover{
+    color: white;
+    background-color: #009999;
+}
+
+.login-container label{
+    top: 18px;
+    padding: 10px;
+    color: red;
+    font-size: 12px;
+    text-transform: none;
+}
+
+.login-container .create-account{
+    color: #666666;
+    font-size: 11px;
+    text-transform: none;
+}
+
+.login-container .create-account span{
+    color: #00cccc;
+    cursor: pointer;
+}
+.login-container .create-account span:hover{
+    color: #009999;
+}
+.login-popup{
+    display: none;
+}
+
+.login-popup.active-login-popup{
+    display: block;
+    animation-name: popup-active;
+    animation-duration: 0.5s;
+}
+
+@keyframes popup-active{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

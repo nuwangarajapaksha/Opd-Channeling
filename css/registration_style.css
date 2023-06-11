@@ -1,0 +1,149 @@
+/* 
+    Created on : Sep 21, 2021, 8:31:32 PM
+    Author     : NUWAA
+*/
+
+.reg-container{
+    width: 50%;
+    height: 430px;
+    top: 100px;
+    left: 25.5%;
+    position: fixed;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #000000;
+    z-index: 999;
+}
+
+.reg-container p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reg-container img{
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.reg-container form{
+    top: 10px;
+}
+
+.reg-container .column{
+    width: 50%;
+    display: table;
+    float: left;
+}
+
+.reg-container form p{
+    top:  10px;
+    margin: 5px 0;
+    color: #333333;
+    font-size: 15px;
+
+}
+
+.reg-container form p sup{
+    color: red;
+}
+
+.reg-container form input{
+    width: 90%;
+    margin: 8px 0;
+    padding: 5px 0px;
+    color: #333333;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px solid #00cccc;
+    outline: none;
+}
+
+.reg-container form input:hover{
+    border-bottom: 1px solid #009999;
+}
+
+.reg-container form select{
+    width: 90%;
+    margin: 8px 0;
+    padding: 5px 0px;
+    color: #333333;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px solid #00cccc;
+    outline: none;
+}
+
+.reg-container form select:hover{
+    border-bottom: 1px solid #009999;
+}
+
+.reg-container form button{
+    top: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #00cccc;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #000000;
+    outline: none;
+    float: left;
+}
+
+.reg-container form button:hover{
+    color: white;
+    background-color: #009999;
+}
+
+.reg-container label{
+    top: 18px;
+    padding: 10px;
+    color: red;
+    font-size: 12px;
+    text-transform: none;
+}
+
+.password-change-button{
+    top: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #3399ff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #000000;
+    outline: none;
+    float: left;
+}
+
+.password-change-button:hover{
+    background-color: #3366ff;
+}
+
+
+.reg-popup{
+    display: none;
+}
+
+.reg-popup.active-reg-popup{
+    display: block;
+    animation-name: popup-active;
+    animation-duration: 0.5s;
+}
+
+@keyframes popup-active{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+

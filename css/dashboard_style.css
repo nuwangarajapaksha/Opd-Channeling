@@ -1,0 +1,238 @@
+/* 
+    Created on : Nov 20, 2021, 11:26:56 AM
+    Author     : NUWAA
+*/
+
+.dashboard-container{
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    padding: 30px 30px;
+    display: block;
+}
+
+.dashboard-container button{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #00cccc;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px #000000;
+    cursor: pointer;
+}
+
+.dashboard-container button:hover{
+    color: white;
+    background-color: #009999;
+}
+
+.dashboard-container form {
+    right: 32px;
+    float: right;
+}
+
+.dashboard-container form input{
+    width: 200px;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #00cccc;
+    outline: none;
+}
+
+.dashboard-container form input:hover{
+    border-bottom: 1px solid #009999;
+}
+
+.dashboard-container table{
+    width: 100%;
+    top: 10px;
+    border-collapse: collapse;
+}
+
+.dashboard-container table tr{
+    border-bottom: 1px solid white;
+}
+
+.dashboard-container table tr th{
+    color: white;
+    text-align: left;
+    padding: 10px;
+    background-color: #00cccc;
+}
+
+.dashboard-content td {
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    background-color: #adffff;  
+}
+
+.dashboard-content:hover{
+    color: #666666;
+}
+
+.dashboard-content .remove{
+    width: 10px;
+    color: red;
+    font-weight: bolder;
+    text-align: center;
+    background-color: white;
+}
+
+.dashboard-content .remove:hover{
+    color: #009999;
+}
+
+.shader{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    z-index: 899;
+    display: none;
+}
+
+.shader.active-shader{
+    display: block;
+    animation-name: shader-active;
+    animation-duration: 0.6s;
+}
+
+@keyframes shader-active{
+    from {opacity: 0;}
+    to {opacity: 0.3;}
+}
+
+.dashboard-content a{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}  
+
+.dashboard-content a:hover{
+    color: #009999;
+}
+
+
+
+
+.dashboard-child-container{
+    width: 60%;
+    height: 430px;
+    padding: 30px;
+    border-radius: 5px;
+    margin: auto;
+    border: 2px solid #00cccc;
+}
+
+.dashboard-child-container p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dashboard-child-container form{
+    float: none;
+    padding: 10px 50px;;
+}
+
+.dashboard-child-container .column{
+    width: 50%;
+    display: table;
+    float: left;
+}
+
+.dashboard-child-container form p{
+    top:  10px;
+    margin: 5px 0;
+    color: #333333;
+    font-size: 15px;
+
+}
+
+.dashboard-child-container form p sup{
+    color: red;
+}
+
+.dashboard-child-container form input{
+    width: 90%;
+    margin: 8px 0;
+    padding: 5px 0px;
+    color: #333333;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px solid #00cccc;
+    outline: none;
+}
+
+.dashboard-child-container form input:hover{
+    border-bottom: 1px solid #009999;
+}
+
+.dashboard-child-container form select{
+    width: 90%;
+    margin: 8px 0;
+    padding: 5px 0px;
+    color: #333333;
+    font-size: 14px;
+    text-align: left;
+    text-transform: none;
+    border: none;
+    border-bottom: 1px solid #00cccc;
+    outline: none;
+}
+
+.dashboard-child-container form select:hover{
+    border-bottom: 1px solid #009999;
+}
+
+.dashboard-child-container form button{
+    top: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #00cccc;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px #000000;
+    outline: none;
+    float: left;
+}
+
+.dashboard-child-container form button:hover{
+    color: white;
+    background-color: #009999;
+}
+
+.dashboard-child-container label{
+    top: 18px;
+    padding: 10px;
+    color: red;
+    font-size: 12px;
+    text-transform: none;
+}
+
+.dashboard-child-container label.animi{
+    color: #00cccc;
+    font-family: "Segoe Script";
+    font-size: 40px;
+    top: 50px;
+    left: 30px;
+    animation-name: animi;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes animi{
+    from{font-size: 10px;}
+    to{font-size: 40px;}
+}
+
+
